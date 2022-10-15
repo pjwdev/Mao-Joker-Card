@@ -1,0 +1,181 @@
+
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* The Red Joker*/
+
+/*The top and bottom images of the cards are from a Chinese propaganda poster from 1965 and the image is being part of the IISH / Stefan R. Landsberger Collections*/
+/*images such as this and more like it can be found at chineseposters.net*/
+
+/* basic elements */
+
+
+
+html {
+background-image: 		url('images/mao_006.jpg');
+background-attachment:	fixed;
+position:				absolute;
+background-repeat:		no-repeat;
+padding:				0px;
+margin:					0px;
+	}
+body { 
+	font: 				75% 'courier new', sans-serif;
+	line-height: 		1.9;
+	color: 				#555753; 
+	margin: 			0; 
+	padding: 			0;
+	}
+p { 
+	font-family:		courier new;
+	margin-top: 		0; 
+	text-align: 		justify;
+	font-size:			1.2em;
+	}
+	/*moved the heading to the right with the margin to make it more centred*/
+													/* got the 'text-shadow' idea from http://css-tricks.com/snippets/css/css-text-shadow/ 
+													I dropped the colour of the background for the shadow as I learned that shadows 
+													probably have some colour from the background and not usually completely black -
+													Photoshop CS2 Essential Training on lynda.com*/
+h1 {
+padding-top:			20px;
+	font-family:		impact;	
+	font-size:			2.5em;
+	font-weight:		normal;
+	padding-left:		43px;
+	text-shadow: 		1px 1px 1px #5b0000;		
+}	
+
+h2  {
+	font-family:		'Lucida console';	
+	font-size:			1.6em;
+	font-weight:		normal;
+}
+/*There are many other fonts I would have liked to have chosen but new I had to choose something that would be available on most machines*/
+h3 { 
+	font-family:		'courier new', serif;
+	font-size: 			1.6em;
+	letter-spacing: 	1px; 
+	margin-bottom: 		0; 
+	color: 				#fafafa;
+	}
+	/*I chose colours from sourced from the image using the eye dropper tool in Photoshop to match and used the 'color picker' to find the hexadecimal value*/
+a:link { 
+	font-weight: 		normal; 
+	text-decoration: 	none; 
+	color: 				#778d6b;
+	}
+a:visited { 
+	font-weight: 		bold; 
+	text-decoration: 	none; 
+	color: 				#e64d2e;
+	}
+a:hover, a:active { 
+	text-decoration: 	underline; 
+	color: 				#71787c;
+	}
+acronym {
+	border-bottom: 		none;
+	}
+
+
+/* specific divs */
+/*gave this an index of 1 so that it would not appear over the top image.... and it's positioned 'relative' so that it appears relative to where it should be as was explained on lynda.com. The background color is one of the colours found with the 'color picker' in photoshop.*/
+#container { 
+font-family:			'Lucida console';
+font-weight:			normal;
+font-size:				1em;
+position:				relative;
+color:					#f6f600;
+background-color:		#8a3123;
+width: 					273px;
+margin-top:				310px;
+margin-left:			502px;
+margin-bottom:			0px;
+padding-left:			10px;
+padding-right:			10px;
+padding-bottom: 		180px;
+z-index: 				1;
+}
+/*so this has a higher z-index than the others to always appear on top of anything that might cross it.*/
+/*extra long height for the border*/
+div#extraDiv1 {
+background-image: 		url('images/New_Mao_joker_top_cut_off_white.jpg');
+background-position:	left top;
+background-repeat: 		no-repeat;
+position:				fixed;
+border-style:			solid;
+border-width:			1px;
+border-bottom:			none;
+left:			430px;
+top: 					0;
+height:					694px;
+width:					435px;		
+z-index: 				3;
+}
+/*this is the div used for the bottom half of the image and is positioned to be on the bottom of the rest of the content. I had to take some off the margin as I think there is default browser styling to over-ride or something. With a little trial and error it sat properly. */
+div#extraDiv2 {
+background-image: 			url('images/New_Mao_joker_bottom.jpg');
+background-position:		bottom;
+background-repeat: 			no-repeat;
+position:					relative;
+margin-left:				428px;
+margin-top: 				0px;
+margin-bottom:				-10px;
+padding:					0px;
+height:						315px;
+width:						440px;		
+z-index: 					2;
+} 
+div#extraDiv3 {
+background-image: 			url('images/white_strip.png');
+top:						310px;
+background-position:		left top;
+background-repeat: 			repeat-y;
+position:					fixed;
+margin-left:				431px;
+width:						75px;
+height:						800px;
+z-index: 					2;
+}
+div#extraDiv4 {
+background-image: 			url('images/white_strip.png');
+top:						0px;
+background-position:		right top;
+background-repeat: 			repeat-y;
+position:					fixed;
+width:						75px;
+height:						1115px;
+margin-left:				791px;
+z-index: 					1;
+}
+div#extraDiv5 {
+background-image: 			url('images/mid_strip.png');
+top:					310px;
+background-position:	right top;
+background-repeat: 		no-repeat;
+position:				fixed;
+width: 					293px;
+height:					20px;
+margin-left:			502px;
+z-index: 				9;
+}
+/* I wanted to put these elements to display at the bottom - in the footer. So I positioned them absolutely at the bottom of the document and adjusted the #container bottom appropriately too*/
+.p5 {
+padding-left:				0px;
+position:					absolute;
+margin-top:					620px;
+}
+/*moved the footer to the right with the margin to make it more centred*/
+#footer {
+position:					absolute;
+margin-top:					680px;
+margin-left:				35px;
+}
+li{
+list-style-image:	url('images/star_yellow.png');
+list-style-type:	circle;
+margin:				0;
+padding:			0;		
+}
+	
+	
